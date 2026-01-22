@@ -1,0 +1,70 @@
+body {
+  background-color: aquamarine;
+  background-image: url("images/simzart\ bg\ one.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #000000;
+  font-family: "Times New Roman";
+  line-height: 1.4em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#main a {
+  color: #ee4ed3;
+  text-decoration: none;
+}
+#header-container {
+  background-image: url("images/simzart\ header\ bg.png");
+  width: 960px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 20px;
+}
+#header {
+  list-style: none;
+  height: 100;
+  float: top;
+  padding-right: 20px;
+}
+#header-title {
+  color: black;
+}
+
+#container {
+  background: #8a7f7f;
+  width: 960px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 20px;
+}
+#navigate {
+  height: 40px;
+  background: #666;
+}
+#navigate ul {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+#navigate li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+#navigate .active {
+  font-weight: bold;
+  color: #fff;
+}
+dl {
+  color: rgb(0, 0, 0);
+}
+dt {
+  text-decoration: underline;
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+dd {
+  color: yellow;
+}

@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tomin eka sivusto</title>
+    <!--Please do not steal!!1-->
+    <meta charset="UTF-8">
+    <meta name ="description" content="student-made HTML page for messing around and learning with html and css">
+    <meta name ="keywords" content="student, university, karelia, finland">
+    <meta name ="author" content="Tomi L">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content ="30">
+  </head>
+  <body style="background-color: gray;">
+    <h1 style="color:aliceblue">Tervetuloa sivustolleni!</h1>
+    <br />
+
+    <p >
+      Hei, olen <b>Tomi Lampen</b>, tietojenkäsittelyn tradenomi opiskelija Karelia
+      Ammattikorkeakoulussa
+    </p>
+    <a href="https://github.com/atl987" target="_blank"> Github </a>
+    <br />
+    <button onclick="switchToPageTwo()" style="background-color: aquamarine; color:#333333">toinen sivu 
+    <a href="page2.html"> </a>
+    </button>
+    <script>
+      function switchToPageTwo()
+      {
+        window.open("_index.html", "_self")
+      }
+    </script>
+    <br>
+    <iframe src="page2.html">
+
+    </iframe>
+    <hr />
+    <h2 style="color:#28f005">Kevään Kurssini</h2>
+    <div style="background-color: green;">
+    <p  style="background-color: #222222; color:rgb(4, 240, 232)">
+       ipsum dolor sit amet consectetur adipisicing elit. Facilis
+      voluptatem eos perferendis<span style="color:red"> maxime dolorem dolore repudiandae</span> quibusdam ea,
+      laudantium explicabo, non beatae, nobis ipsam tempora maiores. Adipisci
+      quis impedit reprehenderit!
+ 
+    </p>
+    <form action="" method="POST">
+        <div>
+          <label for="firstname">Etunimi:</label>
+          <input required type="text" id="firstname" placeholder="Pekka">       
+        </div>
+
+      <br>
+
+        <div>
+          <label for="surname">Sukunimi:</label>
+          <input required type="text" id="surname" placeholder="Puupää"> 
+                </div>
+                        <br>
+                <div>
+          <label for="email">sähköposti:</label>
+          <input required type="email" id="email" placeholder="Puupää"> 
+        </div>
+                <br>
+
+                <div>
+          <label for="password">Salasana:</label>
+          <input required type="password" id="password" placeholder="Puupää"> 
+        </div>
+                <br>
+                <div>
+          <label for="date">Päivämäärä:</label>
+          <input required type="date" id="date" placeholder="Puupää"> 
+        </div>
+        
+        <br>
+                        <div>
+          <label for="quant">lukmäärä:</label>
+          <input required type="number" id="quant" placeholder="Puupää"> 
+        </div>
+        
+        <br>
+        <div>
+          <label for="title">Choose a letter:</label>
+
+          <label for="A">A</label>
+          <input type = "radio" name="title" value="A">
+
+          <label for="B">B</label>
+          <input type = "radio" name="title" value="B">
+
+          <label for="C">C</label>
+          <input type = "radio" name="title" value="C">
+
+        </div>
+
+        <div>
+          <label for="payment"></label>
+          <select id="payment" name ="payment">
+            <option value="visa">visa</option>
+            <option value="netbank">nettipankki</option>
+            <option value="cash">käteinen</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <input type="reset">
+        </div>
+                <div>
+          <input type="submit">
+        </div>
+                <br>
+    </form>
+    <h4>Unordered List</h4>
+    <ul>
+      <li>cheese</li>
+      <li>chick peas</li>
+      <li>seitan</li>
+      <li>Salad
+        <ul>
+          <li>Tomato</li>
+          <li>Cucumber</li>
+          <li>Lettuce</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Ordered List</h4>
+    <ol type="A">
+      <li>brush teeth</li>
+      <li>make coffee</li>
+      <li>eat breakfast</li>
+      <li>code</li>
+    </ol>
+        <h4>Description List</h4>
+    <dl>
+      <dt>HTML</dt>
+      <dd>this adds structure to a webpage</dd>
+            <dt>CSS</dt>
+      <dd>this adds style to a webpage</dd>
+            <dt>JS</dt>
+      <dd>this adds functionality to a webpage</dd>
+    </dl>
+    </div>
+    <h2>Aikataulu</h2>
+    <table bgcolor ="black" width = "700">
+      <tr bgcolor="pink" align="center">
+        <th width="100">Maanantai</th>
+        <th width="100">Tiistai</th>
+        <th width="100">Keskiviikko</th>
+        <th width="100">Torstai</th>
+        <th width="100">Perjantai</th>
+        <th width="100">Lauantai</th>
+        <th width="100">Sunnuntai</th>
+        <tr bgcolor="orange"  align="center">
+        <td>Opiskelua</td>
+          <td>Opiskelua</td>
+          <td>Opiskelua</td>
+          <td>Opiskelua</td>
+          <td>Opiskelua</td>
+          <td>Olen möllöm</td>
+          <td>Olen möllöm</td>
+        </tr>
+      </tr>
+    </table>
+    <a href="https://bsky.app/profile/simzart.bsky.social/post/3ma7iss6vic27" target="_blank">
+    <img src="images/simzart bg one.jpg" height="500" title="This is an image!" 
+    alt="Woman in a messy rustic kitchen cooking something in a pot on a stove. her transparent ghost cat familiar is peeking in the pot. another one is below her playing in a closet with an open door"
+    >
+  </a>
+  <audio
+     controls      
+  >
+<source src="ay get the fuck outta here MEME.mp4">
+Selaimesi ei tue HMTL5 audiota
+  </audio>
+  <video controls >
+    <source src="Ursula Le Guin.mp4" width="500">
+    Selaimesi ei tue HMTL5 videota
+  </video>
+    <p>
+      <a href="https://bsky.app/profile/simzart.bsky.social" target="_blank">
+        taustakuvat @simzart
+      </a>
+      </p>
+    </p>
+  </body>
+</html>
