@@ -23,8 +23,6 @@
       </div>
       <div id="main">
     <h1 >Tervetuloa sivustolleni!</h1>
-    <br />
-
     <p >
       Hei, olen <b>Tomi Lampen</b>, tietojenkäsittelyn tradenomi opiskelija Karelia
       Ammattikorkeakoulussa
@@ -35,7 +33,15 @@
       </div>
       <hr>
       <div>
-        <button>Poistu sivulta</button>
+            <button onclick="switchToPageLeave()">Poistu sivulta 
+    
+    </button>
+    <script>
+      function switchToPageLeave()
+      {
+        window.open("leave.html", "_self")
+      }
+    </script>
       </div>
     <div id="footer"></div>
       <p>
