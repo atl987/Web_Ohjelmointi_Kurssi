@@ -24,8 +24,6 @@ a {
 }
 #header {
   list-style: none;
-  height: 100;
-  float: top;
   padding-right: 20px;
 }
 #header-title {
