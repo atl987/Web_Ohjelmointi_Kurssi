@@ -14,7 +14,7 @@ Kutsu funktiota.
 Käyttöliittymän voit tehdä millaiseksi haluat (komentokehoite -pohjainen kuitenkin)
 */
 //käytetään puhelinnumero-nimi parien tallennukseen karttaa
-const phoneNumbers = new Map();
+const phoneNumbers = new Array();
 //kerrotaan ohjelman tarkoitus
 console.log("Tervetuloa puhelinluetteloon!\n")
 while(true){
@@ -22,22 +22,25 @@ while(true){
 var input = require('readline-sync')
 
 //luetaan käyttäjältä syöte muuttujaan
-var userChoice = input.question("1)Lisää numero \n 2)Tulosta kaikki numerot\n 3)Hae numeroa nimellä\n"); 
+console.log("1)Lisää numero \n 2)Tulosta kaikki numerot\n 3)Hae numeroa nimellä\n");
+var userChoice = input.question(); 
 switch(userChoice)
 {
     case '1':
 
-        var name = input.question("Anna nimi");
+        var name = input.question("Anna nimi: ");
 
-        var number = input.question("Anna puhelinumero");
-        phoneNumbers.set(name, number);
+        var number = input.question("Anna puhelinumero: ");
+        var person = new Person(name,number);
+        phoneNumbers[phoneNumbers.length] = person;
         break;
     case '2':
         if(phoneNumbers.size!=0)
         {
-            phoneNumbers.forEach(function(value, key){
-                console.log(key + ":" +value)
-            })
+            for(var i=0;i<phoneNumbers.length;i++){
+                var person = phoneNumbers[i]
+                console.log(person.nimi + ": "+ person.numero)
+            }
         }
         else
         {
@@ -45,10 +48,11 @@ switch(userChoice)
         }
         break;
     case '3':
-        var name = input.question("Anna nimi");
-        if(phoneNumbers.has(name)){
-            var number = phoneNumbers.get(name);
-            console.log(name +": "+ number)
+        var name = input.question("Anna nimi: ");
+        var person = phoneNumbers.find(o=> o.nimi === name)
+        if(person!=null)
+        {
+            console.log(person.nimi+": "+ person.numero)
         }
         else
         {
@@ -61,3 +65,9 @@ switch(userChoice)
     userChoice = input.question(); 
 }
 }
+function Person(nimi, numero) {
+this.nimi=nimi;
+this.numero=numero;
+}
+
+
