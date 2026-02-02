@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallopeli</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .rectangle {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <canvas id="canvas_pallopeli" width="480" height="320">
+
+    </canvas>
+    <script>
+        var c = document.getElementById("canvas_pallopeli");
+var context = c.getContext("2d");
+
+drawRectangles(context)
+
+        function drawRectAt(context, x, y){
+        context.rect(x, y, 60, 20);
+        context.strokeStyle = "blue";
+        context.lineWidth = "3";
+        context.fillStyle = "blue";
+        context.stroke();
+        context.fill();
+
+        }
+        function drawRectangles(context)
+        {
+            for(let k = 0;k<5;k++)
+            {
+                let jum = k*30;
+            for (let i = 0;i<5;i++)
+            {
+                let num = i*70;
+                drawRectAt(context, 10+num, 10+jum);
+            }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
