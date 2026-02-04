@@ -49,10 +49,10 @@ switch(userChoice)
         break;
     case '3':
         var name = input.question("Anna nimi: ");
-        var person = phoneNumbers.find(o=> o.nimi === name)
-        if(person!=null)
+        var number = Search(phoneNumbers, name);
+        if(number!=null)
         {
-            console.log(person.nimi+": "+ person.numero)
+            console.log(name+": "+ number);
         }
         else
         {
@@ -65,9 +65,18 @@ switch(userChoice)
     userChoice = input.question(); 
 }
 }
-function Person(nimi, numero) {
+function Person(nimi, numero) 
+{
 this.nimi=nimi;
 this.numero=numero;
 }
-
+function Search(array, name)
+{
+var person = array.find(o=> o.nimi === name);
+if(person !=null){
+    return person.numero;}
+    else{
+        return null;
+    }
+}
 
